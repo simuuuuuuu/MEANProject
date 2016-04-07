@@ -1,0 +1,37 @@
+ 
+ <!DOCTYPE html>
+<html>
+    <head>
+        <!-- Loading the external files -->
+        <link href="/app/CSS/yourCustomCSS.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+      
+        <script src="/app/JS/Controllers.js"></script> 
+        <script src="/app/JS/applicationModule.js"></script>
+        <title> Western University</title>
+    </head>
+    <body ng-app="myApp" ng-controller="loginController" ng-init="init()">
+   
+      
+        
+        <div class="container" >
+   
+
+   
+        
+             
+            <!--The main area is where the view is loaded via router-->
+            <div ng-view=""></div>
+               
+    
+           
+          
+   
+    
+</div>
+    </div>
+          
+    </body>
+</html>
+ 

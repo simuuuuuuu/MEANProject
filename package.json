@@ -1,0 +1,36 @@
+
+
+{
+  "name": "Western",
+  "version": "0.0.0",
+  "description": "Socialize using three social media in one.",
+  "main": "server.js",
+  "author": "Harsimran Kaur Billing",
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "body-parser": "~1.0.0",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.4.1",
+    "express": "~4.0.0",
+    "express-session": "~1.0.0",
+    "passport-facebook" : "~1.0.2",
+    "passport-linkedin" : "*",
+    "node-linked-in" : "*",
+    "linkedin-js": "*",
+    "passport-twitter" : "~1.0.2", 
+    "mongoose": "~3.8.1",
+    "morgan": "~1.0.0",
+    "passport": "~0.1.17",
+    "passport-google-oauth": "~0.1.5",
+    "passport-linkedin-oauth2" : "*",
+    "node-linkedin" : "*",
+    "twitter-node-client" : "*",
+    "passport-tumblr" : "*",
+    "tumblrwks" : "*",
+    "twitter": "*",
+    "twit": "*",
+    "request": "*",
+    "fb": "*"
+  }
+}

@@ -1,0 +1,190 @@
+/* I used the header part to get that backround colour of sky blue and the little curves around the edges*/
+.header {
+   
+  width: 100%;
+  height:100px;
+  overflow: hidden;
+  border: none;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  background: #94CCDC;
+  margin:0 auto;
+}
+
+/* Used logger to fix the size of the button*/
+.logger{
+    
+    height: 50px;
+    width: 100px;
+}
+
+/*used the same format for all the buttons on my page */
+.button {
+    background-color: #2B2323;
+    width: 150px;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*The main part just has the background image! had to tweak a lot to get it right! May contain unnecesary lines of code*/
+.main{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url('Western Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    position: absolute;
+    
+}
+
+/*The below are the classes which defining the three column nature of the website
+This is the code to ajdust the alignment of the divisions! I floated all the three columns to the left
+and gave them a width of 20, 60 and 20% respectively. Hasd to learn it the hard way! Initially I made CSS acc to the dimensions of my laptop
+But when I viewed it on the PC at weldon it was utter chaos!
+*/
+
+.postbody{
+    border: solid grey 1px; 
+    width: 50%;
+    text-align: left;
+}
+
+.deletebutton{
+  border: solid grey 1px; 
+    width: 20%;
+    text-align: center;
+}
+
+.commentbutton{
+      border: solid grey 1px; 
+    width: 15%;
+     text-align: center;
+}
+
+.getcommentbutton{
+     background-color: #2B2323; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #555555; 
+    
+}
+.postcommenttable{
+ border-collapse: collapse;        
+   background-color: white;
+   border: solid grey 1px; 
+   width: 100%;   
+    
+}
+
+.deletepostbutton{
+     background-color: #2B2323; /* Green */
+    border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #555555;
+    
+}
+
+.trackposttable{
+  border-collapse: collapse;        
+   background-color: white;
+   border: solid grey 1px; 
+   width: 100%;
+   
+   
+}
+
+.sidebar{
+     width: 20%; 
+    float: left;
+}
+
+.myrow{
+
+
+}
+
+.mainarea{
+    
+    width: 60%; 
+    float: left;
+    text-align:center;
+}
+
+.mytextareacontainer{
+    width: 60%; 
+    height: 450px; 
+    text-align:center;
+    
+}
+
+.mytextarea{
+    
+     width: 100%; 
+    height: 450px; 
+}
+.mybuttonarea{
+padding-top:170px;
+width: 20%;
+float: left;  
+
+    
+}
+
+/* The rest of the code is for the drop down menu*/
+
+.dropbtn {
+    background-color: #2B2323;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2B2323;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #DF802D}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2B2323;
+}

@@ -1,0 +1,96 @@
+
+<!-- This division is loaded as a view-->
+<div class="header" >
+           
+            <table style="position: absolute" style="width:100%;"><centre>
+                
+                
+            <tr>
+                <td style="float: left; width: 50%">
+                    
+                    <!-- Dislays the Western logo with an alternative name of Western -->
+                    <img class="westernlogo" src="/app/CSS/western Eng Logo.png" alt="Western">
+                    </td>
+                    <td style="float: centre; width: 25%">
+                        <!--Displays the heading -->
+                        <h3 class="ece">ECE 9065B</h3>
+                </td>
+                <td style="float: right; width: 25%">
+                    
+                    
+                   <a href="/api/logout"  ><img class="logger" src="/app/CSS/logout.png" alt="login"/></a>
+                   
+                    
+                </td>
+            </tr>
+            
+       </centre>  </table>
+        </div>
+    
+     <div class="main" style="height: 100%;">
+     <div class="sidebar">
+        
+        <!-- The sidebar div only contains the dropdown menu with the 3 options. Based on these the appropraite view is selected -->
+       
+    <div class="dropdown">
+  <button class="dropbtn">Select Option</button>
+  <div class="dropdown-content">
+     <a href="#posting">Posts</a>
+      
+        <a href="#specificpostcomments">Post Comments</a>
+        
+          <a href="#posttracking">Track Posts</a>
+       
+       
+  </div>
+</div>
+
+    </div>  
+     <div class="mainarea">
+         <div class="mytextareacontainer">
+    <h1 >Post Comments</h1>
+     <h2>{{headermessage}}</h2> 
+        <!-- This part just consists of a text area and a heading, the class textareacontainer is used to deifne the
+    dimensions in CCS file and all the textareas in the views use this class in order to maintain the consistency
+    -->
+  
+    <!--
+    <dl ng-model="comments" ng-repeat="comment in comments" style="background-color: white; border: solid grey 1px;" >
+        <dt>
+            
+        <dd id="comment._id">{{comment.commentbody}}</dd>
+        
+        </dt>
+    </dl> -->
+    <div>
+        <table ng-repeat="comment in comments track by $index" class="postcommenttable" >
+             
+        <tr>
+        <td>{{comment.message}}</td>
+        </tr>
+        
+    </table>
+    </div>
+              </div>  
+         </div>
+
+<div class="mybuttonarea">
+        
+        <!-- Learning from my technique in the header part, I chose to align the buttons and checkboxes in the form of 
+        table with three rows and two columns
+        -->
+        <table>
+            <tr>
+                <td><input type="radio" onClick="location.href='/auth/facebook';"></td>
+               <td><a class="button">Facebook</a></td>
+            </tr>
+            <tr>
+               <td><input type="radio"onClick="location.href='/auth/twitter';" ></td>
+                <td><a class="button">Twitter</a></td>
+            </tr>
+            <tr>
+                <td><input type="radio" onClick="location.href='/auth/linkedin';"></td>
+                <td><a class="button">LinkedIn</a></td>
+            </tr>
+        </table>
+  </div>
